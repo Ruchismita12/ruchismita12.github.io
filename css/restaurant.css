@@ -1,0 +1,96 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28313.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .h-primary {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    margin: 40px 0;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    padding: 8px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  #search-button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-button:hover {
+    background-color: #45a049;
+  }
+  
+  #search-button:active {
+    background-color: #388e3c;
+  }
+  
+  #search-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4CAF50;
+  }
+  
+  #services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    margin: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    flex: 0 0 calc(33.33% - 80px);
+  }
+  
+  .h-secondary {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .center {
+    margin-top: 10px;
+  }
+  
+  .box img {
+    width: 90%;
+    height: 66%;
+    border-radius: 8px;
+    padding: 5%;
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      flex-basis: 49%;
+    }
+  }
+
+  
+
+
+
+ 
