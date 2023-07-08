@@ -1,0 +1,83 @@
+<!--<html>
+    <head>
+        <title>Login Form Design</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <body>
+            <div class="loginbox">
+            <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/avatar-default-icon.png" alt="Avatar"width="100" height="100" left="150">
+            <h1>Login Here</h1>
+            <form>
+                <p>Username</p>
+                <input type="text" name="" placeholder="Enter Username">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Enter Password">
+                <input type="submit" name="" value="Login">
+                <a href="index.html"></a>
+                <br>
+                <a href="#">Lost your password?</a><br>
+                <a href="#">Don't have an account?</a>
+
+                
+                
+            </form>
+            </div>
+        </body>
+    </head>
+</html>  -->
+
+
+
+
+
+
+<html>
+  <head>
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+      /* Add the following CSS styles */
+      .login-button {
+        background-color: violet;
+      }
+      .login-button.clicked {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loginbox">
+      <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-status/512/avatar-default-icon.png" alt="Avatar" width="100" height="100">
+      <h1>Login Here</h1>
+      <form>
+        <p>Username</p>
+        <input type="text" id="username" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" id="password" placeholder="Enter Password">
+        <input type="button" value="Login" class="login-button" onclick="checkCredentials()">
+        <br>
+        <a href="#">Lost your password?</a><br>
+        <a href="#">Don't have an account?</a>
+      </form>
+    </div>
+
+    <script>
+      function checkCredentials() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        var loginButton = document.querySelector('.login-button');
+
+        // Check if the entered username and password match the desired combination
+        if (username === "Ruchismita" && password === "12345") {
+          // Redirect to the desired page on successful login
+          window.location.href = "index.html";
+        } else {
+          // Display an error message for invalid credentials
+          alert("Invalid username or password. Please try again.");
+        }
+
+        // Change the button color to yellow when clicked
+        loginButton.classList.add('clicked');
+      }
+    </script>
+  </body>
+</html>
